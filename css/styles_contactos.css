@@ -1,0 +1,132 @@
+/* Paleta de colores */
+:root {
+    --rojo-siman: #B40027;
+    --gris-fondo: #F9F9F9;
+    --negro: #333;
+    --blanco: #fff;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    color: var(--negro);
+  }
+  
+  h2, h3, label {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  header {
+    background-color: var(--rojo-siman);
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background-color: var(--gris-fondo);
+    padding: 2rem;
+  }
+  
+  /* Formulario de contacto */
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    background-color: var(--rojo-siman);
+    color: var(--blanco);
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #8c001f;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  
